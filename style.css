@@ -1,0 +1,70 @@
+html, body {
+ 	height: 100%;
+ 	margin: 0; 
+ 	padding: 0; 
+}
+#head{
+	background-color:#A43F41;
+	text-align:center;
+}
+#map{ 
+	height: 100%;
+	width:80%;
+	left:20%;
+}
+
+#listview{
+	height: 100%;
+    width: 20%;
+    position:absolute;
+    background-color: #313435;
+    padding-top: 30px;
+}
+
+
+.textbox{
+	opacity: 0.8;
+	color:#12131f;
+	font-size: 20px;
+	width: 200px;
+	height: 40px;
+	margin-top: 5px;
+	border-radius: 10px;
+	text-align: center;
+	margin-left: 15px;
+}
+
+.searchbox{
+	float: right;
+	margin-left: 5px;	
+}
+
+ul{
+	padding-left:10px;
+}
+
+li{
+	color:#79cc21;
+	min-height: 30px;
+	width: 100%;
+	margin-left: 3px;
+	padding-top: 6px;
+	padding-bottom: 5px;
+	vertical-align:middle;
+	list-style: none;
+	font-size: 20px;
+	border: 1px solid black;
+	border-left: none;
+	border-right: none;
+
+}
+
+li:hover{
+	background-color: #181a1b;
+	cursor: pointer;
+}
+
+.bold{
+	font-size: 15px;
+	font-weight: bold;
+}

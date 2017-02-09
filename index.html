@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+ <body>
+	<div id="head">
+		<h1>Bikaner Sites</h1>
+		<p>Below are Some of my Historical Places of Bikaner</p>
+	</div>
+ 	
+ 	<div id="content">
+	   <div id="listview">
+         <!--Div for the heading of the div-->
+         <!--Search box with the list-->
+         <div id="features">
+            <input type="text" name="search" placeholder="Search" class="textbox" data-bind="textInput: searchterm">
+         </div>
+         <div id="list">
+            <ul data-bind="foreach: locations">
+               <li data-bind="text: title, click: selectloc, visible: updatelist"></li>
+            </ul>
+         </div>
+   </div>
+	   <div id="map"></div>
+    </div>
+   <script src="js/knockout-3.4.1.js"></script>
+   <script src="js/jquery-3.1.1.min.js"></script>
+   <script src="js/script.js"></script>
+   <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTWqTczhaT01yKIpp-qiRBM1-f3gBbF2w&v=3&callback=initMap" onerror="erroralert()">
+   
+   </script>
+ </body>
+</html>
