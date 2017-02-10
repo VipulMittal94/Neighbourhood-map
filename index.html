@@ -6,16 +6,23 @@
    </head>
  <body>
 	<div id="head">
-		<h1>Bikaner Sites</h1>
-		<p>Below are Some of my Historical Places of Bikaner</p>
+		<h1>Bikaner</h1>
+		<p>Some of Incredible Places in Bikaner</p>
 	</div>
  	
  	<div id="content">
+      <div id="map"></div>
+      <img src="src/hamburger.png" id="open" class="open" onclick="openview()">
 	   <div id="listview">
          <!--Div for the heading of the div-->
          <!--Search box with the list-->
          <div id="features">
-            <input type="text" name="search" placeholder="Search" class="textbox" data-bind="textInput: searchterm">
+            <div id="search">
+               <input type="text" name="search" placeholder="Search" class="textbox" data-bind="textInput: searchterm">               
+            </div>
+            <div id="closelist">
+               <img src="src/close.png" onclick="closeview()" class="open" id="close">
+            </div>
          </div>
          <div id="list">
             <ul data-bind="foreach: locations">
@@ -23,8 +30,16 @@
             </ul>
          </div>
    </div>
-	   <div id="map"></div>
     </div>
+   <script>
+      function openview() {
+         document.getElementById("listview").style.width = "300px";
+      }
+      function closeview() {
+         document.getElementById("listview").style.width = "0";
+      }
+   </script>
+
    <script src="js/knockout-3.4.1.js"></script>
    <script src="js/jquery-3.1.1.min.js"></script>
    <script src="js/script.js"></script>

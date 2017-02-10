@@ -8,15 +8,49 @@ html, body {
 	text-align:center;
 }
 #map{ 
-	height: 100%;
-	width:80%;
-	left:20%;
+	height: 85%;
+	width:100%;
+}
+.open{
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+#open{
+	position: absolute;
+	left: 10px;
+	top: 16%;
+	margin: 5px;
+}
+#close
+{
+	float: left;
+	width: 30px;
+}
+#search
+{
+	width:250px;
+	float: left;
+}
+#closelist{
+	float:left;
+	height: 30px;
+	width: 30px;
+	background-color: #f1593a;
+	position: relative;
+	top: 0;
+	left: 0;
 }
 
 #listview{
-	height: 100%;
-    width: 20%;
-    position:absolute;
+	height: 86.5%;
+    width: 0;
+    position:fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    left: 0;
+    top: 13.5%;
     background-color: #313435;
     padding-top: 30px;
 }
@@ -35,7 +69,6 @@ html, body {
 }
 
 .searchbox{
-	float: right;
 	margin-left: 5px;	
 }
 
@@ -47,10 +80,8 @@ li{
 	color:#79cc21;
 	min-height: 30px;
 	width: 100%;
-	margin-left: 3px;
 	padding-top: 6px;
 	padding-bottom: 5px;
-	vertical-align:middle;
 	list-style: none;
 	font-size: 20px;
 	border: 1px solid black;

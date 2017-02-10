@@ -1,5 +1,16 @@
-It is a Single page application showing some places in Bikaner.
+# Neighborhood Map Project
 
+#### About Project
+* The Purpose of the Project is to Make a Map of a Neighborhood Showing Favorite Places.
+* Teaches Student how to use more than one API with each other.
+* The Map Showcases Some of my Favorite Locations in Bikaner.
+* You can Click on Locations to see their FourSquare Address and no. of checkins for that place.
+
+#### APIs & Frameworks Used
+* KnockoutJS
+* jQuery
+* Google Maps API
+* FourSquare API
 How to open it in pc:
 
 1) You can clone the repository using GIT or
@@ -14,3 +25,4 @@ How to open the file
 
 open the folder name Neighbourhood-map
 open index.html in that folder
+click on the marker to know the about that marker.

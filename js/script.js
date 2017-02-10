@@ -91,7 +91,8 @@ var ViewModel = function() {
         var marker = new google.maps.Marker({
             title: loc.title,
             position: loc.location,
-            map: map
+            map: map,
+            animation: google.maps.Animation.DROP
         });
         loc.marker = marker;
         loc.updatelist = ko.observable(true);
@@ -129,9 +130,7 @@ var ViewModel = function() {
 //Function to execute when the user clicks the listview 
 self.selectloc = function(loc) {
     loc.marker.setAnimation(google.maps.Animation.BOUNCE);
-    setTimeout(function() {
-        loc.marker.setAnimation(null);
-    }, 1400);
+    setTimeout(function(){loc.marker.setAnimation(null);}, 1400);
     var largeInfowindow = new google.maps.InfoWindow();
     populateInfoWindow(loc.marker, largeInfowindow);
 };
